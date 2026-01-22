@@ -1,0 +1,238 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#000;
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+}
+.logo span{color:#ff004f;}
+
+nav{
+  display:flex;
+}
+nav a{
+  margin:0 12px;
+  color:#fff;
+  text-decoration:none;
+}
+
+.menu-btn{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:50px 10%;
+  flex-wrap:wrap;
+}
+/* Social Media Section */
+.social-section {
+  background: #0d0d0d;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social {
+  width: 160px;
+  height: 160px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.social i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.social span {
+  font-size: 16px;
+}
+/* Resume Section */
+.resume-section {
+  background: #0d0d0d;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.resume-box {
+  margin-top: 30px;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 40px;
+  transition: 0.3s ease;
+}
+
+.resume-btn i {
+  font-size: 22px;
+}
+
+.resume-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #00c6ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .resume-btn {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
+/* Hover Effects */
+.social.instagram:hover {
+  background: linear-gradient(45deg, #f58529, #dd2a7b);
+}
+
+.social.linkedin:hover {
+  background: #0077b5;
+}
+
+.social.github:hover {
+  background: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .social {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+.hero-text h4{
+  color:#ff004f;
+}
+.hero-text h1{
+  font-size:42px;
+}
+.hero-text span{
+  color:#ff004f;
+}
+
+.hero-img img{
+  width:280px;
+  border-radius:12px;
+}
+
+/* SECTIONS */
+section{
+  padding:60px 10%;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#ff004f;
+}
+
+/* SKILLS */
+.cards{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+.card{
+  background:#222;
+  padding:30px;
+  flex:1;
+  min-width:300px;
+  text-align:center;
+}
+
+/* PORTFOLIO */
+.work-box{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.work-box img{
+  width:300px;
+}
+
+/* CONTACT */
+form{
+  max-width:600px;
+  margin:auto;
+}
+form input, form textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+button{
+  background:#ff004f;
+  color:#fff;
+  border:none;
+  padding:10px 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  nav{
+    display:none;
+    flex-direction:column;
+    background:#ff004f;
+    position:absolute;
+    top:70px;
+    right:0;
+  }
+  nav a{
+    padding:10px;
+    color:#fff;
+  }
+  .menu-btn{
+    display:block;
+  }
+}
